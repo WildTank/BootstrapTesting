@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="./script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar p-0 border-bottom bg-white">
+      <a class="navbar-brand d-flex align-items-center my-2 mx-3" href="#">
+        <img src="./images/tanukodofavicon.png" alt="Site Title" class="brand-icon" />
+        <p class="h5 mb-0 px-2">SITE TITLE</p>
+      </a>
+      <div class="button-wrapper mx-3">
+        <svg width="38" height="25" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H38V4.16667H0V0ZM0 10.4167H38V14.5833H0V10.4167ZM0 20.8333H38V25H0V20.8333Z" fill="black" />
+        </svg>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="carouselExample" class="carousel slide">
+      <!-- carousel wrapper -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Carousel1Img1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Carousel1Img2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Carousel1Img3.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control carousel-control-next" type="button" data-bs-target="#carouselExample"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="parallax position-relative">
+      <div class="position-absolute bottom-0" style="left: 59px;">
+        <svg width="119" height="142" viewBox="0 0 119 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M70.8068 99.0463C68.0786 109.259 68.0042 117.776 70.5866 124.597C75.3319 137.137 92.0071 140.745 92.7926 144.032C93.578 147.322 70.5866 149 57.5915 149C44.5993 149 28.6619 146.518 28.6619 144.032C28.6619 141.55 43.7871 138.254 48.3836 124.364C51.0612 116.268 50.7696 106.967 47.503 96.4686C46.6894 96.7234 45.8416 96.8521 44.9891 96.85C41.4458 96.85 38.4945 94.6746 37.8578 91.8019C35.4123 93.4111 32.348 94.3647 29.0248 94.3647C21.8549 94.3647 15.9018 89.9185 14.7236 84.0718C13.7029 84.3128 12.6575 84.4338 11.6087 84.4323C5.19746 84.4323 0 79.9862 0 74.5C0 70.7959 2.36816 67.5655 5.88172 65.858C4.07585 64.7286 2.90367 62.9018 2.90367 60.8427C2.90367 60.1275 3.0435 59.4391 3.30531 58.7984C1.31498 57.9133 0 56.3816 0 54.6323C0 52.4659 2.029 50.6242 4.85532 49.9448C1.89512 48.127 0 45.3377 0 42.2177C0 37.2619 4.76905 33.1585 11.0048 32.4045C9.53429 30.6226 8.723 28.3868 8.70804 26.075C8.70804 19.9034 14.5541 14.9 21.7686 14.9C22.4945 14.9 23.2086 14.9507 23.9047 15.049C25.6451 10.6297 30.5302 7.45 36.281 7.45C37.8786 7.45 39.4078 7.69436 40.824 8.14434C41.8057 3.51342 46.548 0 52.2423 0C58.0675 0 62.8931 3.67136 63.7261 8.45426C65.8533 6.32058 69.0217 4.96766 72.5621 4.96766C78.9733 4.96766 84.1708 9.41382 84.1708 14.9C84.1708 16.7476 83.5788 18.479 82.5524 19.963C83.079 19.9004 83.6204 19.8677 84.1708 19.8677C90.1388 19.8677 95.0596 23.7208 95.7081 28.6825C97.534 27.7756 99.546 27.3083 101.584 27.3177C107.998 27.3177 113.196 31.7638 113.196 37.25C113.196 40.9899 110.78 44.247 107.21 45.9427C110.78 47.6353 113.196 50.8924 113.196 54.6323C113.196 57.8805 111.372 60.7682 108.555 62.58C109.643 63.8256 110.292 65.3723 110.292 67.05C110.292 67.6937 110.197 68.3165 110.018 68.9095C115.373 71.4515 119 76.3387 119 81.95C119 90.1778 111.205 96.85 101.584 96.85C99.1846 96.8572 96.8038 96.4291 94.5568 95.5865C91.9209 97.899 88.2407 99.3323 84.1708 99.3323C81.0576 99.3566 78.004 98.4768 75.3795 96.7993C74.1299 97.8632 72.5621 98.6499 70.8068 99.0463Z"
+            fill="white" />
+        </svg>
+      </div>
+      <div class="position-absolute bottom-0" style="right: 59px;">
+        <svg width="222" height="221" viewBox="0 0 222 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M193.594 145.195V138.281H198.778C211.187 138.281 221.25 128.635 221.25 120.994C221.25 120.994 214.336 124.453 203.963 124.453C192.543 124.453 176.307 118.262 176.307 110.625V82.9688H181.491C193.9 82.9688 203.963 73.3223 203.963 65.6817C203.963 65.6817 197.049 69.1406 186.676 69.1406C175.256 69.1406 159.02 62.9493 159.02 55.3125V27.6562H164.204C176.613 27.6562 186.676 18.0061 186.676 10.3692C186.676 10.3692 179.762 13.8281 169.389 13.8281C157.969 13.8281 141.733 7.63681 141.733 0H79.5099C79.5099 7.63681 63.2738 13.8281 51.8536 13.8281C41.4807 13.8281 34.5666 10.3692 34.5666 10.3692C34.5666 18.0061 44.6298 27.6562 57.0382 27.6562H62.2229V55.3125C62.2229 62.9493 45.9868 69.1406 34.5666 69.1406C24.1937 69.1406 17.2796 65.6817 17.2796 65.6817C17.2796 73.3186 27.3428 82.9688 39.7512 82.9688H44.9359V110.625C44.9359 118.262 28.6998 124.453 17.2796 124.453C6.91406 124.453 0 120.998 0 120.998C0 128.635 10.0632 138.281 22.4716 138.281H27.6562V165.938L0 221.25H221.25L193.594 165.938V145.195ZM196.4 179.201L198.067 182.398H189.851L195.567 191.993H203.063L204.726 195.198H179.327L184.681 204.793H209.719L211.39 207.99H201.81L195.563 219.185H192.233L198.476 207.99H175.16L168.917 219.185H165.587L171.83 207.99H142.684L148.931 219.185H145.601L139.354 207.99H116.042L122.281 219.185H118.955L112.708 207.99H89.3924L95.6353 219.185H92.3055L86.0626 207.99H68.5764L62.3298 219.185H59.0037L65.2429 207.99H38.5934L32.3504 219.185H29.0133L35.2562 207.99H9.85669L11.5271 204.793H22.7703L28.1209 195.198H16.52L18.1831 191.993H39.0027L33.2907 182.398H23.1833L24.8501 179.201H39.0064L45.6734 168.006H48.9995L42.3362 179.201H72.3156L65.6559 168.006H68.9821L75.6454 179.201H98.9651L92.2981 168.006H95.6279L102.291 179.201H118.951L125.615 168.006H128.944L122.277 179.201H145.597L152.261 168.006H155.587L148.927 179.201H178.91L172.243 168.006H175.569L182.236 179.201H196.4ZM94.9863 19.8793C98.8803 16.7781 101.329 12.0987 110.625 12.0987C119.936 12.0987 122.016 16.6085 126.264 19.8756C136.367 27.6526 144.517 27.6231 145.822 27.6526H75.4241C76.7295 27.6267 85.1923 27.6562 94.9863 19.8793ZM65.6854 34.5703H89.8865V48.3984H96.8006V34.5703H107.174V48.3984H114.088V34.5703H124.46V48.3984H131.375V34.5703H155.576V55.3125H65.6854V34.5703ZM110.625 62.5695L138.668 82.9688H82.5816L110.625 62.5695ZM55.3125 89.8828V103.711H62.2266V89.8828H82.9688V103.711H86.4276V89.8828H93.3417V103.711H96.8006V89.8828H103.715V103.711H107.174V89.8828H114.088V103.711H117.546V89.8828H124.46V103.711H127.919V89.8828H134.833V103.711H138.281V89.8828H159.023V103.711H165.938V89.8828H172.852V110.168H48.3984V89.8828H55.3125ZM86.0404 127.912C92.1764 123.782 96.0188 117.539 110.625 117.539C125.257 117.539 128.524 123.557 135.21 127.912C151.088 138.281 163.884 138.241 165.938 138.281H55.3125C57.3664 138.241 70.6599 138.281 86.0404 127.912ZM38.0292 145.195V159.023H44.9432V145.195H67.4149V159.023H70.8737V145.195H77.7878V159.023H81.2467V145.195H88.1608V159.023H91.6196V145.195H98.5337V159.023H101.993V145.195H108.907V159.023H112.366V145.195H119.28V159.023H122.738V145.195H129.652V159.023H133.111V145.195H140.025V159.023H143.484V145.195H150.398V159.023H153.857V145.195H176.329V159.023H183.243V145.195H190.157V163.751H31.1151V145.195H38.0292Z"
+            fill="white" />
+        </svg>
+      </div>
+      <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center lh-lg" style="color: white;">
+        <p class="display-1">SITE TITLE</p>
+        <p class="display-6">SITE SLOGAN</p>
+      </div>
+    </div>
+    <!-- infosections -->
+    <div class="container infosections">
+      <div class="d-flex align-items-center">
+        <img src="./images/Quadnuki1 1.png" alt="" class="position-relative">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, incidunt corrupti itaque hic deleniti eum
+            autem asperiores quaerat doloremque iste?</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eos nulla quia dolores officia. Quidem
+            laboriosam doloremque vero commodi voluptate dolor, dicta non autem provident laudantium! Omnis, est
+            molestias aspernatur voluptates ipsa, quidem repellendus dolore non ducimus quos laudantium blanditiis!</p>
+        </div>
+        <img src="./images/Quadnuki2 1.png" alt="" class="position-relative">
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="./images/Quadnuki3 1.png" alt="" class="position-relative">
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolorum ipsam unde repellendus
+            natus deserunt voluptatem inventore quod, soluta, optio blanditiis qui itaque quo cupiditate quidem
+            assumenda eligendi tenetur aliquid dolor illum nesciunt, obcaecati dicta? Veritatis voluptas quisquam iusto
+            placeat consequatur architecto sapiente tempore, assumenda a fugiat culpa ipsa error iste asperiores alias
+            maxime rem nisi totam sed repellat et.</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio laudantium maiores reprehenderit aut
+            dolor consectetur iure fugiat? Quisquam quibusdam modi rerum reprehenderit. Amet sunt dolores eligendi sint
+            iusto asperiores explicabo sed, alias assumenda quod reiciendis labore, laboriosam voluptates deserunt
+            facilis quaerat voluptate expedita, aliquam ab illo id odio adipisci quas. Laborum numquam consectetur quis
+            iure fugit, nam dolor assumenda id, vero in beatae, animi voluptatibus. Doloremque delectus, alias commodi
+            atque, exercitationem aliquid id rerum molestias accusantium odio eveniet animi debitis?</p>
+          </div>
+          <img src="./images/Quadnuki4 1.png" alt="" class="position-relative">
+      </div>
+    </div>
+  </main>
+  <footer class="bar bg-white border-top text-center">
+    <div>© 2024 WeRNoTa Corporation</div>
+  </footer>
+</body>
+
+</html>
